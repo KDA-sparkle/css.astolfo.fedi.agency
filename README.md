@@ -40,4 +40,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Acknowledgements 💖
 Special thanks to the open-source community for their incredible work, and to all the Astolfo fans out there!
+
+For use past on your css custom =>
 ```
+@import url('https://raw.githubusercontent.com/KDA-sparkle/css.astolfo.fedi.agency/main/style.css');
