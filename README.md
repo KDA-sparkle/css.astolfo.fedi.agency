@@ -1,4 +1,3 @@
-```markdown
 # Astolfo CSS Theme 🎀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/KDA-sparkle/css.astolfo.fedi.agency/blob/main/LICENSE)
@@ -18,7 +17,7 @@ Welcome to the **Astolfo CSS Theme**! 🌟 This theme is a custom CSS design ins
 ## Installation 🛠️
 To use this CSS theme in your project, simply add the following line to your CSS file:
 
-```css
+```
 @import url('https://raw.githubusercontent.com/KDA-sparkle/css.astolfo.fedi.agency/main/style.css');
 ```
 
@@ -40,7 +39,3 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Acknowledgements 💖
 Special thanks to the open-source community for their incredible work, and to all the Astolfo fans out there!
-
-For use past on your css custom =>
-```
-@import url('https://raw.githubusercontent.com/KDA-sparkle/css.astolfo.fedi.agency/main/style.css');
