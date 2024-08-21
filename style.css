@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+@font-face {
+	font-display: swap;
+	font-family: 'Lexend';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/static-assets/fonts/Lexend-VariableFont_wght.ttf') format('opentype');
+}
+
+:root {
+	--radius-xs: 5px;
+	--radius-sm: 5px;
+	--radius: 5px;
+	--radius-md: 5px;
+	--radius-lg: 5px;
+	--radius-xl: 5px;
+	--radius-ellipse: 5px;
+	--radius-full: 5px;
+
+	--marginFull: 16px;
+	--marginHalf: 10px;
+
+	--margin: var(--marginFull);
+
+	/* Couleurs personnalisées */
+	--main-color: #B02A31; /* Rouge vif */
+	--background-color: #000000; /* Noir OLED */
+	--panel-bg-color: #121212; /* Gris très foncé pour les panneaux */
+	--box-bg-color: #1A1A1A; /* Gris foncé pour les boîtes */
+	--sidebar-bg-color: #2A2A2A; /* Gris plus clair pour les sections latérales */
+	--text-color: #F8B3D4; /* Rose clair */
+	--hover-color: #D4B26E; /* Or clair */
+	--border-color: #B882ED; /* Violet clair */
+	--multicolor-gradient: linear-gradient(90deg, #F8B3D4, #B02A31, #D4B26E, #B882ED, #FF6347, #FF4500, #FFD700, #00FF00, #00BFFF, #8A2BE2); /* Dégradé multicolore pour les pseudos */
+
+	--avatar: 48px;
+	--thread-width: 2px;
+}
+
+html, body {
+	background-color: #000000 !important; /* Fond noir OLED */
+	color: var(--text-color);
+	accent-color: var(--main-color);
+	font-family: 'Lexend', 'Hiragino Maru Gothic Pro', "BIZ UDGothic", Roboto, HelveticaNeue, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.35;
+
+	&, * {
+		scrollbar-color: var(--hover-color) transparent;
+		scrollbar-width: thin;
+
+		&::-webkit-scrollbar {
+			width: 6px;
+			height: 6px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: inherit;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: var(--hover-color);
+
+			&:hover {
+				background: var(--main-color);
+			}
+
+			&:active {
+				background: var(--text-color);
+			}
+		}
+	}
+}
+
+.sidebar, .navbar, .footer {
+	background-color: var(--sidebar-bg-color); /* Gris plus clair pour les sections latérales */
+}
+
+.panel, .card, .box {
+	background-color: var(--box-bg-color); /* Gris foncé pour les boîtes */
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: var(--text-color);
+	tap-highlight-color: transparent;
+
+	&:hover {
+		color: var(--hover-color);
+		text-decoration: underline;
+	}
+
+	&[target="_blank"] {
+		-webkit-touch-callout: default;
+	}
+}
+
+textarea, input {
+	tap-highlight-color: transparent;
+}
+
+optgroup, option {
+	background: var(--panel-bg-color);
+	color: var(--text-color);
+}
+
+hr {
+	margin: var(--margin) 0;
+	border: none;
+	height: 1px;
+	background: var(--border-color);
+}
+
+:focus-visible {
+	outline: var(--main-color) solid 2px;
+	outline-offset: -2px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/* Pseudos et mentions en dégradé multicolore sans effet LED */
+.username, .username-multicolor, .sparkle, .Sparkle, .mention, .fedi-catboy-agency, .email {
+	background: var(--multicolor-gradient);
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: multicolor 3s infinite alternate;
+	font-weight: bold;
+}
+
+@keyframes multicolor {
+	0% { color: #F8B3D4; } /* Rose clair */
+	10% { color: #B02A31; } /* Rouge vif */
+	20% { color: #D4B26E; } /* Or clair */
+	30% { color: #B882ED; } /* Violet clair */
+	40% { color: #FF6347; } /* Tomate */
+	50% { color: #FF4500; } /* Orange Red */
+	60% { color: #FFD700; } /* Or */
+	70% { color: #00FF00; } /* Vert lime */
+	80% { color: #00BFFF; } /* Deep Sky Blue */
+	90% { color: #8A2BE2; } /* Violet Blue */
+	100% { color: #F8B3D4; } /* Retour à Rose clair */
+}
+
+/* Styles personnalisés pour les boutons */
+._buttonPrimary, .MkButton-root-baFh.MkButton-primary-2hCn.MkButton-rounded-lA8v,
+.pages-settings-profile-backgroundEdit-y5P0, 
+.pages-settings-profile-bannerEdit-uX7T {
+	color: var(--text-color);
+	background: var(--main-color);
+	border-radius: var(--radius); /* Coins arrondis */
+	padding: 10px;
+	box-shadow: none; /* Pas d'ombre */
+	transition: background 0.3s ease, box-shadow 0.3s ease; /* Transition douce */
+
+	&:not(:disabled):hover {
+		background: var(--hover-color);
+	}
+
+	&:not(:disabled):active {
+		background: var(--border-color); /* Violet clair pour état actif */
+	}
+
+	&:not(:disabled):focus {
+		outline: none;
+	}
+}
+
+/* Remplacement de l'icône de la barre de navigation */
+.navbar-instanceIcon-rr1h {
+	content: url('https://image.pngaaa.com/212/738212-middle.png');
+	width: 24px;
+	height: 24px;
+	display: block;
+	margin: auto;
+}
+
+/* Autres styles conservés */
+._shadow {
+	box-shadow: 0px 4px 32px var(--text-color) !important;
+}
+
+.bdi.block {
+	display: block;
+}
+
+._mfm_blur_ {
+	filter: blur(6px);
+	transition: filter 0.3s;
+
+	&:hover {
+		filter: blur(0px);
+	}
+}
