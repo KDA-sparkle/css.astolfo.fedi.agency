@@ -15,9 +15,9 @@ Welcome to the **Astolfo CSS Theme**! 🌟 This theme is a custom CSS design ins
 - **Responsive Design**: The theme adjusts seamlessly across different screen sizes.
 
 ## Installation 🛠️
-To use this CSS theme in your project, simply add the following line to your CSS file:
+To use this CSS theme in your project, simply copy and paste the following code into your CSS file:
 
-```
+```css
 @import url('https://raw.githubusercontent.com/KDA-sparkle/css.astolfo.fedi.agency/main/style.css');
 ```
 
