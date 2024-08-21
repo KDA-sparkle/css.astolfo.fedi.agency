@@ -17,9 +17,7 @@ Welcome to the **Astolfo CSS Theme**! 🌟 This theme is a custom CSS design ins
 ## Installation 🛠️
 To use this CSS theme in your project, simply copy and paste the following code into your CSS file:
 
-```css
-@import url('https://raw.githubusercontent.com/KDA-sparkle/css.astolfo.fedi.agency/main/style.css');
-```
+https://github.com/KDA-sparkle/css.astolfo.fedi.agency/blob/main/style.css
 
 ## Preview 📸
 ![Astolfo Theme Preview](https://cdn.discordapp.com/attachments/1191158725931700274/1275912059762245732/image.png?ex=66c79d34&is=66c64bb4&hm=e6ca666fee224b3ecc0fdec168a6f103e3a944160869fc51af5053daa6dfbc48&)
