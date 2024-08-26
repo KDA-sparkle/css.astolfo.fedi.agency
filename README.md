@@ -20,7 +20,7 @@ To use this CSS theme in your project, simply copy and paste the following code 
 https://github.com/KDA-sparkle/css.astolfo.fedi.agency/blob/main/style.css
 
 ## Preview 📸
-(![Capture d'écran 2024-08-21 221838](https://github.com/user-attachments/assets/cf9c2847-9a3a-4ea8-97c6-e186b716d9e6)
+![Capture d'écran 2024-08-21 221838](https://github.com/user-attachments/assets/cf9c2847-9a3a-4ea8-97c6-e186b716d9e6)
 
 ## Usage ⚙️
 This theme is perfect for:
